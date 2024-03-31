@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.layout.dashboard',[
-        'title'=> 'dashboard',
-    ]);
-});
+
+Route::get('/', [DashboardController::class,'index'])->name('dashboard');
+
+Route::get('/login', [LoginController::class,'index'])->name('login');
+Route::get('/register', [LoginController::class,'register'])->name('register');
+Route::post('/login', [LoginController::class,'authenticate']);
+
+    

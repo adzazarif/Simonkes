@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+input[type="checkbox"]:checked {
+    background-color: #5F8D4E;
+  }
+  input[type="checkbox"]{
+    border: 1px solid #5F8D4E;
+  }
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login .box{
+    width: 350px;
+}
+.login .box .header-login{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.login .box .header-login h2{
+    font-weight: bold;
+    margin-top: 15px;
+}
+.login .box .header-login p{
+    color: #555;
+}
+.icon-pw{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.btn-lupa-pass{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.form-label{
+    font-weight: 600;
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #5F8D4E;
+}
+

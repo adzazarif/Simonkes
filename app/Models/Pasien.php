@@ -23,4 +23,9 @@ class Pasien extends Model
    {
         return $this->belongsTo(Pegawai::class, 'pegawais_id');
    }
+
+   public function users() : HasOne
+   {
+    return $this->hasOne(User::class, 'users_id');
+   }
 }

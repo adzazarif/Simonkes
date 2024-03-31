@@ -29,25 +29,26 @@
             </div>
     
             <div class="body-login">
-                <form action="">
+                <form action="/register" method="POST">
+                    @csrf
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Username</label>
-                        <input type="text" placeholder="Input your username here" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" name="username" placeholder="Input your username here" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" placeholder="Input your email here" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" name="email" placeholder="Input your email here" class="form-control p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label ">Password</label>
                         <div class="d-flex" style="position: relative">
-                            <input type="password" class="form-control p-3" placeholder="Input your password here" id="password">
+                            <input type="password" name="password" class="form-control p-3" placeholder="Input your password here" id="password">
                             <i class="bi bi-eye-slash icon-pw"  id="togglePassword"></i>
                         </div>
                       </div>
 
     
-                    <button class="btn-submit" type="submit">Login Now</button>
+                    <button class="btn-submit" type="submit">Register Now</button>
                 </form>
     
                 <p>Already have an account , <a  class="btn-lupa-pass" href="/login">Login Now</a></p>

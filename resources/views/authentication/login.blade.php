@@ -17,6 +17,11 @@
     <div class="login">
 
         <div class="box">
+            @if (session()->has('success'))    
+            <div class="alert alert-success" role="alert">
+                {{ session()->get('success') }}
+              </div>
+            @endif
             <div class="header-login">
                 <svg width="63" height="60" viewBox="0 0 63 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M31.1875 15.9375C31.1875 23.5314 25.0314 29.6875 17.4375 29.6875H3.6875V15.9375C3.6875 8.34358 9.84358 2.1875 17.4375 2.1875C25.0314 2.1875 31.1875 8.34358 31.1875 15.9375Z" fill="#212A3E" stroke="white" stroke-width="0.625"/>

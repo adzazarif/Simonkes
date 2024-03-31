@@ -23,4 +23,8 @@ class Dokter extends Model
     {
         return $this->hasOne(PersonalInfo::class, 'personal_infos_id');
     }
+    public function users():HasOne
+    {
+        return $this->hasOne(User::class, 'users_id');
+    }
 }

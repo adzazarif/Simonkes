@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
+use App\Models\Pegawai;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,11 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [DashboardController::class,'index'])->name('dashboard');
-
-Route::get('/login', [LoginController::class,'index'])->name('login');
-Route::get('/register', [LoginController::class,'register'])->name('register');
-Route::post('/login', [LoginController::class,'authenticate']);
-Route::post('/register', [LoginController::class,'store']);
-
-    
+Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/dokter', function () {
+    $pasiens = Pegawai::find(1)->pasien;
+    return view('dokter.index', $pasiens);
+});
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/register', [LoginController::class, 'register'])->name('register');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/register', [LoginController::class, 'store']);

@@ -45,8 +45,8 @@
                     <div class="mb-4">
                         <label for="exampleInputPassword1" class="form-label ">Password</label>
                         <div class="d-flex" style="position: relative">
-                            <input type="password" class="form-control p-3" name="password" placeholder="Input your password here" id="password">
-                            <i class="bi bi-eye-slash icon-pw" id="togglePassword"></i>
+                            <input type="text" class="form-control p-3" name="password" placeholder="Input your password here" id="password">
+                            <i class="bi-eye-slash icon-pw" type="hidden" id="togglePassword"></i>
                         </div>
                     </div>
 

@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProfilePasienController;
 use App\Models\Pegawai;
 use Illuminate\Support\Facades\Route;
 
@@ -28,4 +29,4 @@ Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/register', [LoginController::class, 'store']);
 
-Route::get('/profile', [ProfileController::class,'index'])->name('profile');
+Route::get('/profile', [ProfilePasienController::class,'index'])->name('profile');

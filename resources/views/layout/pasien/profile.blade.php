@@ -1,13 +1,13 @@
-@extends('admin.template.template-admin')
+@extends('template.template-admin')
 @section('content')
 <div class="container-xxl flex-grow-1 container-p-y">
     <div class="card">
         <div class="container-xxl flex-grow-1 container-p-y">
 
             <!-- Basic Layout & Basic with Icons -->
+            <form>
             <div class="row">
               <!-- Basic Layout -->
-              <form>
               <div class="col-xxl">
                 <div class="card mb-4">
                   <div class="card-header d-flex align-items-center justify-content-between">
@@ -159,9 +159,9 @@
                   <button type="submit" class="btn btn-primary">Send</button>
 
               </div>
-            </form>
             </div>
           </div>
+        </form>
         
 </div>
 @endsection

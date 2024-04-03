@@ -59,13 +59,13 @@
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
 
-        @include('admin.component.sidebar')
+        @include('component.sidebar')
 
         <!-- Layout container -->
         <div class="layout-page">
           <!-- Navbar -->
 
-            @include('admin.component.navbar')
+            @include('component.navbar')
 
           <!-- / Navbar -->
 

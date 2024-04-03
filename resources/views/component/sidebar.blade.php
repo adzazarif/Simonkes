@@ -31,7 +31,7 @@
 
     <ul class="menu-inner py-1">
       <!-- Dashboard -->
-      @include('admin.component.menu')
+      @include('component.menu')
 
     </ul>
   </aside>

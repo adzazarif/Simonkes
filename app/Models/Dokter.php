@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Dokter extends Model
@@ -19,9 +20,9 @@ class Dokter extends Model
         'nama_dokter', 'spesialisasi', 'personal_infos_id'
     ];
 
-    public function personal_info(): HasOne
+    public function personal_info(): BelongsTo
     {
-        return $this->hasOne(PersonalInfo::class, 'personal_infos_id');
+        return $this->belongsTo(PersonalInfo::class, 'personal_infos_id');
     }
     public function users():HasOne
     {

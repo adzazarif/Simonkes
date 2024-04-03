@@ -24,16 +24,16 @@ class PersonalInfo extends Model
         return $this->belongsTo(Alamat::class, 'alamats_id');
     }
 
-    public function pegawai() : BelongsTo {
-        return $this->belongsTo(Pegawai::class, 'personal_infos_id');
+    public function pegawai() : HasOne {
+        return $this->hasOne(Pegawai::class, 'personal_infos_id');
     }
 
-    public function dokter() : BelongsTo {
-        return $this->belongsTo(Dokter::class, 'personal_infos_id');
+    public function dokter() : HasOne {
+        return $this->hasOne(Dokter::class, 'personal_infos_id');
     }
 
-    public function apoteker():BelongsTo
+    public function apoteker():HasOne
     {
-        return $this->belongsTo(Apoteker::class, 'personal_infos_id');
+        return $this->hasOne(Apoteker::class, 'personal_infos_id');
     }
 }

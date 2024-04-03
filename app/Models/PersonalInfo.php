@@ -16,7 +16,7 @@ class PersonalInfo extends Model
     public $incrementing = true;
 
     protected $fillable = [
-        'tgl_lahir', 'jenis_kelamin', 'no_telepon', 'foto', 'alamat_id'
+        'tgl_lahir', 'jenis_kelamin', 'no_telepon', 'foto', 'alamats_id'
     ];
 
     public function alamat():BelongsTo

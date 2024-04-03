@@ -8,7 +8,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view("admin.layout.dashboard",[
+        return view("layout.pasien.dashboard",[
             "title"=> "Dashboard",
         ]);
     }

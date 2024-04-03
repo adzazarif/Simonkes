@@ -5,7 +5,8 @@
         <div class="container-xxl flex-grow-1 container-p-y">
 
             <!-- Basic Layout & Basic with Icons -->
-            <form>
+            <form action="/profile" method="POST" enctype="multipart/form-data">
+              @csrf
             <div class="row">
               <!-- Basic Layout -->
               <div class="col-xxl">
@@ -86,7 +87,7 @@
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-company">Foto</label>
                         <div class="col-sm-10">
-                            <input class="form-control" type="file" id="formFile" />
+                            <input class="form-control" type="file" name="foto" id="formFile" />
                         </div>
                       </div>
                     
@@ -113,7 +114,7 @@
                         <div class="col-sm-10">
                           <input
                             type="text"
-                            name="kabupaten"
+                            name="kab_kota"
                             class="form-control"
                             id="basic-default-company"
                             placeholder="Masukan kabupaten."

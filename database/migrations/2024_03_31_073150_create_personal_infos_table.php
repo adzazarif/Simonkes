@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('personal_infos', function (Blueprint $table) {
             $table->id();
             $table->date('tgl_lahir')->nullable();
-            $table->enum('jenis_kelamain', ['laki-laki', 'perempuan'])->nullable();
+            $table->enum('jenis_kelamin', ['laki-laki', 'perempuan'])->nullable();
             $table->string('no_telepon')->nullable();
             $table->string('foto')->nullable();
             $table->timestamps();

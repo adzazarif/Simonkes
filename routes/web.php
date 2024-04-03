@@ -31,3 +31,5 @@ Route::controller(DokterController::class)->group(function () {
     route::get('/dokter', 'index');
     route::post('/dokter', 'store');
 });
+Route::get('/profile', [ProfilePasienController::class,'index'])->name('profile');
+Route::post('/profile', [ProfilePasienController::class,'store']);

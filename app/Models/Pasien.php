@@ -16,7 +16,7 @@ class Pasien extends Model
    public $incrementing = true;
 
    protected $fillable = [
-        'nama_pasien', 'pegawais_id'
+        'nama_pasien', 'pegawais_id','users_id'
    ];
 
    public function pegawai():BelongsTo

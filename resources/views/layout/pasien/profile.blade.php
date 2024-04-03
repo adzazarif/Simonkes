@@ -7,17 +7,17 @@
             <!-- Basic Layout & Basic with Icons -->
             <div class="row">
               <!-- Basic Layout -->
+              <form>
               <div class="col-xxl">
                 <div class="card mb-4">
                   <div class="card-header d-flex align-items-center justify-content-between">
                     <h5 class="mb-0">Personal Info</h5>
                   </div>
                   <div class="card-body">
-                    <form>
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-name">Nama</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="basic-default-name" placeholder="John Doe" />
+                          <input type="text" name="nama" class="form-control" id="basic-default-name" placeholder="Masukan nama" />
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -25,9 +25,10 @@
                         <div class="col-sm-10">
                           <input
                             type="text"
+                            name="spesialisasi"
                             class="form-control"
                             id="basic-default-company"
-                            placeholder="ACME Inc."
+                            placeholder="Masukan spesialisasi."
                           />
                         </div>
                       </div>
@@ -35,18 +36,18 @@
                         <label class="col-sm-2 col-form-label" for="basic-default-company">Jenis Kelamin</label>
                         <div class="col-sm-10 d-flex align-items-center gap-3">
                             <input
-                            name="default-radio-1"
+                            name="jenis_kelamin"
                             class="form-check-input"
                             type="radio"
-                            value=""
+                            value="laki-laki"
                             id="defaultRadio1"
                           />
                           <label class="form-check-label" for="defaultRadio1"> Laki - Laki </label>
                           <input
-                            name="default-radio-1"
+                            name="jenis_kelamin"
                             class="form-check-input"
                             type="radio"
-                            value=""
+                            value="perempuan"
                             id="defaultRadio1"
                           />
                           <label class="form-check-label" for="defaultRadio1"> Perempuan </label>
@@ -59,14 +60,13 @@
                           <div class="input-group input-group-merge">
                             <input
                               type="date"
+                              name="tgl_lahir"
                               id="basic-default-email"
                               class="form-control"
-                              placeholder="john.doe"
                               aria-label="john.doe"
                               aria-describedby="basic-default-email2"
                             />
                           </div>
-                          <div class="form-text">You can use letters, numbers & periods</div>
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -74,9 +74,10 @@
                         <div class="col-sm-10">
                           <input
                             type="text"
+                            name="no_telepon"
                             id="basic-default-phone"
                             class="form-control phone-mask"
-                            placeholder="658 799 8941"
+                            placeholder="Masukan Nomor telepon"
                             aria-label="658 799 8941"
                             aria-describedby="basic-default-phone"
                           />
@@ -88,8 +89,7 @@
                             <input class="form-control" type="file" id="formFile" />
                         </div>
                       </div>
-
-                    </form>
+                    
                   </div>
                 </div>
               </div>
@@ -100,11 +100,12 @@
                     <h5 class="mb-0">Alamat</h5>
                   </div>
                   <div class="card-body">
-                    <form>
+
+                    
                       <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="basic-default-name">Provinsi</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="basic-default-name" placeholder="John Doe" />
+                          <input type="text" name="provinsi" class="form-control" id="basic-default-name" placeholder="Masukan provinsi" />
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -112,9 +113,10 @@
                         <div class="col-sm-10">
                           <input
                             type="text"
+                            name="kabupaten"
                             class="form-control"
                             id="basic-default-company"
-                            placeholder="ACME Inc."
+                            placeholder="Masukan kabupaten."
                           />
                         </div>
                       </div>
@@ -125,13 +127,13 @@
                             <input
                               type="text"
                               id="basic-default-email"
+                              name="kecamatan"
                               class="form-control"
-                              placeholder="john.doe"
+                              placeholder="Masukan kecamatan"
                               aria-label="john.doe"
                               aria-describedby="basic-default-email2"
                             />
                           </div>
-                          <div class="form-text">You can use letters, numbers & periods</div>
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -139,6 +141,7 @@
                         <div class="col-sm-10">
                           <textarea
                             id="basic-default-message"
+                            name="detail_alamat"
                             class="form-control"
                             placeholder="Hi, Do you have a moment to talk Joe?"
                             aria-label="Hi, Do you have a moment to talk Joe?"
@@ -147,7 +150,7 @@
                         </div>
                       </div>
                      
-                    </form>
+        
                   </div>
                 </div>
               </div>
@@ -156,6 +159,7 @@
                   <button type="submit" class="btn btn-primary">Send</button>
 
               </div>
+            </form>
             </div>
           </div>
         
